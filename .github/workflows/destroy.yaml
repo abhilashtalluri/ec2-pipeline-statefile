@@ -25,5 +25,8 @@ jobs:
       - name: Check AWS Identity
         run: aws sts get-caller-identity
 
+      - name: Terraform Init
+        run: terraform init
+
       - name: Terraform destroy
         run: terraform destroy -auto-approve
